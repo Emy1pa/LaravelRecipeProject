@@ -1,0 +1,18 @@
+Carnet de Recettes
+Bienvenue dans le projet Carnet de Recettes ! Cette application dynamique et conviviale, construite avec le framework Laravel, vous permettra de gérer efficacement vos recettes culinaires. L'objectif principal est de fournir aux utilisateurs une plateforme pour organiser, partager et explorer une variété de délices culinaires.
+
+Fonctionnalités Clés
+Fonctionnalité de Recherche
+Développez une fonctionnalité de recherche puissante permettant aux utilisateurs de trouver rapidement des recettes spécifiques en fonction des noms de plats, des ingrédients (Bonus) ou des catégories (Bonus).
+
+Opérations CRUD sur les Recettes
+Permettez aux utilisateurs d'ajouter facilement de nouvelles recettes, d'éditer celles existantes et de supprimer les recettes dont ils n'ont plus besoin.
+
+Interface Conviviale
+Concevez une interface utilisateur intuitive et visuellement attrayante pour améliorer l'expérience globale des utilisateurs. Facilitez la navigation et l'interaction avec leurs recettes.
+
+Téléchargement d'Images
+Permettez aux utilisateurs de télécharger des images pour chaque recette, offrant ainsi une représentation visuelle de leurs créations culinaires.
+
+Conception Responsive
+Assurez-vous que l'application est responsive, permettant aux utilisateurs d'accéder et de gérer leurs recettes de manière transparente sur différents appareils.
