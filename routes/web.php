@@ -37,3 +37,9 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/create_post', [PostController::class, 'createPost']);
+
+Route::get('/edit-post/{post}', [PostController::class, 'showEditScreen']);
+Route::get('/search', [PostController::class, 'search']);
+
+Route::put('/edit-post/{post}', [PostController::class, 'Edit']);
+Route::delete('/delete-post/{post}', [PostController::class, 'delete']);

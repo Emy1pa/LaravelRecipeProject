@@ -20,7 +20,7 @@
 
     <div class="container mx-auto mt-8 p-8 bg-white max-w-md">
         <h2 class="text-2xl font-bold mb-4 text-green-700 text-center">Create a new recipe</h2>
-        <form action="/create_post" method="post">
+        <form action="/create_post" method="post" enctype="multipart/form-data">
             @csrf
             <div class="mb-4">
                 <label for="title" class="block text-gray-700 text-sm font-semibold mb-2">Recipe Title</label>
@@ -30,10 +30,21 @@
                 <label for="description" class="block text-gray-700 text-sm font-semibold mb-2">Recipe Description</label>
                 <textarea name="body" id="description" placeholder="Recipe Description" rows="4" class="w-full p-2 border border-green-300 rounded-md resize-none"></textarea>
             </div>
+
+<div class="mb-4">
+    <label for="image" class="block text-gray-700 text-sm font-semibold mb-2">Recipe Image</label>
+    <div class="flex items-center">
+        <label for="image-upload" class="cursor-pointer bg-green-900 text-white rounded-md py-2 px-4 hover:bg-green-700">
+            Upload Image
+        </label>
+        <input type="file" name="image" id="image-upload" class="hidden" accept="image/*">
+    </div>
+</div>
+            
             <button type="submit" class="w-full bg-green-900 mb-4 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 Create recipe
             </button>
-            <button type="submit" class="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <button class="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                <a href="/showPosts"> Show all recipes</a>
             </button>
         </form>
