@@ -30,11 +30,17 @@
                 <label for="description" class="block text-gray-700 text-sm font-semibold mb-2">Recipe Description</label>
                 <textarea name="body" id="description" placeholder="Recipe Description" rows="4" class="w-full p-2 border border-green-300 rounded-md resize-none"></textarea>
             </div>
-            <button type="submit" class="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <button type="submit" class="w-full bg-green-900 mb-4 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 Create recipe
+            </button>
+            <button type="submit" class="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+               <a href="/showPosts"> Show all recipes</a>
             </button>
         </form>
     </div>
+    
+    
+     
 </body>
 
 </html>

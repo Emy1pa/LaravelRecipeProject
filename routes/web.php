@@ -1,8 +1,9 @@
 <?php
 
+use App\Models\Post;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    
     return view('home');
 });
 
@@ -24,6 +26,11 @@ Route::get('/signin', function () {
 });
 Route::get('/posts', function () {
     return view('posts');
+});
+Route::get('/showPosts', function () {
+    $posts = [];
+    $posts = Post::where('user_id', auth()->id())->get();
+    return view('showPosts', ['posts' => $posts]);
 });
 
 Route::post('/register', [UserController::class, 'register']);
